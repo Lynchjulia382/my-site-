@@ -8,10 +8,25 @@
   body {
     background: pink;}
 
+    nav{
+      background:#CFBCDF;
+    }
+    #img {
+      display: flex; align-items: center; justify-content: center;
+
+    }
+
+    #img img {width: 100%; }
+
+    #title {text-align: center;display: flex; align-items: center; justify-content: center;background:#CFBCDF}
+
+    ul {list-style-type: none;}
+
   @media screen and (min-width: 800px) {
     .grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: 250px auto 100px;
       grid-gap: 10px;
   }
   .span-col-2{grid-column: span 2 / auto;}
@@ -22,22 +37,29 @@
     background: #785afe;
     color: white;
   }
+
+  #footer li {display: inline-block;
+  background:#CFBCDF }
 }
 
   </style>
   <body>
     <div class="grid">
   <div id="title" class="span-col-2"><h1>Seahorse Serenity</h1></div>
-  <div> <img src="sh.jpg" alt="seahorses are great!!"></div>
-  <div><li><a href="#">-Seahorse Home</a></li>
+  <div id="img"> <img src="sh.jpg" alt="seahorses are great!!"></div>
+  <nav><ul><li><a href="#">-Seahorse Home</a></li>
           <li><a href="#">-Seahorse News</a></li>
           <li><a href="#">-Seahorse Science</a></li>
           <li><a href="#">-Seahorse Fiction</a></li>
           <li><a href="#">-Seahorse Fables</a></li>
-          <li><a href="#">-Seahorse Songs</a></li></div>
+          <li><a href="#">-Seahorse Songs</a></li>
+        </ul>
+        </nav>
 
 
-  <div class="span-col-2">          <h1>SEAHORSE FACTS</h1>
+
+  <div class="span-col-2">
+    <h1>SEAHORSE FACTS</h1>
         <h2>Name</h2>
         <p>The Latin name for seahorse is Hippocampus which means "Horse Caterpillar"</p>
         <h2>What is a Seahorse</h2>
@@ -55,11 +77,14 @@
         <p>Both males and females also change colour during their courtship display.</p>
         <h2>Body</h2>
         <p>Unlike most other fish, seahorses have an exoskeleton. Their bodies are made up of hard, external, bony plates that are fused together with a fleshy covering. They do not have scales.</p></div>
-  <div class="span-col-3"><li>Seahorse Friends:</li>
+  <div class="span-col-3" id="footer">
+<ul>
+    <li>Seahorse Friends:</li>
           <li><a href="http://www.theseahorsetrust.org/seahorse-facts.aspx" target="_blank">The Seahorse Trust</a> |</li>
           <li><a href="http://www.nationalgeographic.com/animals/fish/group/seahorses/" target="_blank">National Geographic</a> |</li>
           <li><a href="http://seahorse.com/" target="_blank">Seahorse.com</a> |</li>
-          <li><a href="http://www.allthesea.com/Seahorses.html" target="_blank">All The Sea</a></li></div>
+          <li><a href="http://www.allthesea.com/Seahorses.html" target="_blank">All The Sea</a></li>
+        </ul></div>
 </div>
   </body>
 </html>

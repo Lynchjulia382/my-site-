@@ -1,0 +1,40 @@
+body{
+  background: pink;}
+
+  nav{
+    background:#CFBCDF;
+  }
+  #img {
+    display: flex; align-items: center; justify-content: center;
+
+  }
+
+  #img img {width: 100%; }
+
+  #title {text-align: center; background-image:url(red.jpg);background-size: cover; background-position: center center;}
+
+  ul {list-style-type: none;}
+
+@media screen and (min-width: 800px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 250px auto 100px;
+    grid-gap: 10px;
+}
+.span-col-2{grid-column: span 2 / auto;}
+
+.span-col-3{grid-column: span 3 / auto;}
+
+body {
+  background: #785afe;
+  color: white;
+}
+
+#footer li {display: inline-block;
+background:#CFBCDF;}
+}
+
+h1{
+  color:wh;
+}
